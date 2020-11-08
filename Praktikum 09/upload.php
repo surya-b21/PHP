@@ -5,7 +5,7 @@ $uploadOk = 1;
 $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
 $file_name = pathinfo($target_file);
 if (isset($_POST["submit"])) {
-    if ($imageFileType = "txt") {
+    if ($imageFileType == "txt") {
         echo "File is an plain text - " . $file_name['basename'] . ".<br>";
         $uploadOk = 1;
     } else {
